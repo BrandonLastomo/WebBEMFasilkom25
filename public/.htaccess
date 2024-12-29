@@ -1,0 +1,32 @@
+
+# Run Php without filename extension
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.html
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
+RewriteCond %{HTTP_HOST} ^bemfasilkomunsika\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bemfasilkomunsika\.com$
+RewriteRule ^/?$ "https\:\/\/bem\.cs\.unsika\.ac\.id\/" [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^bem\.cs\.unsika\.ac\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bem\.cs\.unsika\.ac\.id$
+RewriteRule ^/?$ "https\:\/\/bem\.cs\.unsika\.ac\.id\/" [R=301,L]
+
+
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^fffff\.cozyfarm\.my\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.fffff\.cozyfarm\.my\.id$
+RewriteRule ^/?$ "https\:\/\/fffff\.cozyfarm\.my\.id\/" [R=301,L]
+

@@ -1,0 +1,134 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+.navbar a.dropdown-toggle {
+    cursor: pointer;
+}
+
+.navbar a.dropdown-toggle:hover {
+    color: #fff;
+}
+
+.navbar a.dropdown-item i {
+    margin-top: 0.1px;
+}
+
+.navbar .logout {
+    outline: none;
+}
+
+.main-sidebar a.has-dropdown {
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .btn-action {
+        padding: 4px 0 0 0;
+        min-width: 30px;
+        min-height: 30px;
+        line-height: 30px;
+    }
+
+    .btn-action i {
+        font-size: 12px;
+    }
+}
+
+/* Icon Pdf */
+
+.pdf {
+    width: 36px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 1366px) {
+    .pdf {
+        width: 28px;
+    }
+}
+
+/* Print */
+
+@media print {
+
+    .main-sidebar,
+    .navbar,
+    .main-footer,
+    .section .section-header,
+    .print {
+        display: none;
+    }
+
+    th.no {
+        width: 10%;
+    }
+
+    th.nama {
+        width: 30%;
+    }
+
+    th.npm {
+        width: 10%;
+    }
+
+    th.tahun {
+        width: 20%;
+    }
+}
+
+/* Fasilkom Cup */
+
+/* Turnamen */
+
+.turnamen-individu .card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Peserta */
+
+.img-fcup {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.img-fcup:hover {
+    opacity: 0.7;
+}
+
+/* Modal Foto */
+
+#pop {
+    cursor: pointer;
+}
+
+#modalImg .modal-dialog .modal-content {
+    width: max-content;
+    height: max-content;
+    max-width: max-content;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+#modalImg #imagePreview {
+    width: 80vh;
+}
+
+/* Maba */
+
+.img-maba {
+    max-width: 150px;
+    max-height: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.img-maba:hover {
+    opacity: 0.7;
+}

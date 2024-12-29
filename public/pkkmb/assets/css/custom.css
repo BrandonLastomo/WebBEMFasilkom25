@@ -1,0 +1,736 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+ol {
+    list-style: none;
+}
+
+textarea {
+    white-space: pre-wrap;
+}
+
+.username {
+    text-decoration: none;
+    cursor: context-menu;
+    margin-right: 30px;
+}
+
+.username>*:hover {
+    color: #4a7280 !important;
+}
+
+.btn-logout {
+    background-color: #eeb34c;
+    color: #fff !important;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-logout:hover {
+    background-color: #dda646;
+}
+
+.btn-logout>* {
+    position: relative;
+    left: -25%;
+}
+
+.btn-modify {
+    background-color: #eeb34c !important;
+    color: #ffffff !important;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-modify:hover {
+    transition: all 0.2s;
+    background-color: #dda646 !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+
+@media (max-width: 576px) {
+    .username {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-logout {
+        margin: 10px;
+    }
+
+    .btn-logout>* {
+        position: relative;
+        left: -0%;
+    }
+
+    .btn-logout i {
+        left: 35%;
+        margin-top: 0 !important;
+    }
+
+    .btn-logout span {
+        left: -35%;
+    }
+
+    .section-header h2 {
+        line-height: 32px;
+    }
+}
+
+.content {
+    height: 100vh;
+}
+
+.content.mars,
+.content.kelompok,
+.content.informasi,
+.content.tata-tertib {
+    height: max-content;
+}
+
+/* .content.tata-tertib img {
+    width: 50%;
+} */
+
+.footer {
+    background: #eee;
+    color: #666;
+    border-radius: 8px 8px 0 0;
+}
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+
+.home .card {
+    border: none;
+    border-radius: 14px;
+    -webkit-box-shadow: 0px 2px 8px rgba(1, 41, 112, 0.1);
+    box-shadow: 0px 2px 8px rgba(1, 41, 112, 0.1);
+    transition: 0.3s;
+}
+
+.home .card.login {
+    height: 378px;
+}
+
+.home .card .card-img-top,
+.home .card .card-body h4 {
+    transform: translateY(0);
+}
+
+.home .card .card-body h5 {
+    font-size: 18px;
+}
+
+.home .card:hover {
+    transform: translateY(-10%);
+    background-color: rgba(1, 41, 112, 0.1);
+}
+
+.home .owl-carousel .owl-stage-outer {
+    padding: 30px 0;
+}
+
+.home .owl-carousel .owl-stage-outer .card {
+    margin: 0 5px;
+}
+
+.home .btn-control-home {
+    display: none;
+}
+
+@media (max-width: 576px) {
+
+    .home .btn-control-home {
+        display: flex;
+        position: absolute;
+        /* top: 27%; */
+        bottom: 3%;
+        cursor: pointer;
+        color: #4a7280;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 10px 10px rgba(1, 41, 112, 0.1);
+        transition: all 0.3s;
+        z-index: 99;
+    }
+
+    .home .btn-control-home:hover {
+        background-color: #ddd;
+        box-shadow: 0 5px 5px rgba(1, 41, 112, 0.1);
+    }
+
+    .home .btn-control-home i {
+        font-size: 23px;
+    }
+
+    .home #prev-slide-home {
+        right: 30%;
+    }
+
+    .home #next-slide-home {
+        right: 7%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .owl-carousel.content {
+        margin-top: 50px;
+        height: max-content;
+    }
+
+    .home .btn-control-home {
+        top: 36%;
+    }
+
+    .home #prev-slide-home {
+        right: 26%;
+    }
+
+    .home #next-slide-home {
+        right: 7%;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .home .btn-control-home {
+        top: 34%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .home .btn-control-home {
+        top: 40%;
+    }
+}
+
+@media (max-width: 340px) {
+
+    .home .btn-control-home {
+        top: 52%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Absen
+--------------------------------------------------------------*/
+
+.content .card {
+    border: none;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 2px 8px rgba(1, 41, 112, 0.1);
+    box-shadow: 0px 2px 8px rgba(1, 41, 112, 0.1);
+}
+
+.content .nav .nav-item .nav-link {
+    background-color: rgba(1, 41, 112, 0.1) !important;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px 2px 8px rgba(1, 41, 112, 0.1);
+}
+
+.content .nav .nav-item .nav-link.active {
+    background-color: #fff !important;
+}
+
+.content .nav .nav-item .nav-link:hover {
+    background-color: #eee !important;
+}
+
+.content .card-attendance {
+    border-radius: 8px;
+}
+
+.content .countdown {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content .form-attendance-1,
+.content .form-attendance-2 {
+    display: none;
+}
+
+.content .card-attendance .form-control {
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.content .card-attendance .attendance-1,
+.content .card-attendance .attendance-2 {
+    cursor: context-menu;
+}
+
+.content .card-attendance .calendar-icon {
+    position: relative;
+    top: -35px;
+    margin-right: 14px;
+    float: right;
+}
+
+.content .input-group-2 {
+    cursor: context-menu;
+}
+
+.content .card-attendance .link-zoom {
+    display: none;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.content .card-attendance a.link-zoom {
+    color: #4cb8c4;
+}
+
+.content .after-attendance {
+    display: none;
+    margin: 0;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.content .error-text {
+    font-size: 13px;
+}
+
+.content .note {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .content .card-attendance h6,
+    .content .form-attendance label {
+        font-size: 14px;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    display: none;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# Rundown
+--------------------------------------------------------------*/
+
+.horizontal-timeline .events-wrapper .events {
+    background-color: rgba(1, 41, 112, 0.1);
+}
+
+.horizontal-timeline .events-wrapper .events .filling-line,
+.horizontal-timeline .events-wrapper .events a::after {
+    background-color: #4a7280;
+}
+
+.horizontal-timeline .events-content li {
+    background-color: #fff !important;
+    font-size: 16px !important;
+    width: 50% !important;
+    box-shadow: 0 0 10px rgba(1, 41, 112, 0.1);
+    border-radius: 12px !important;
+}
+
+.horizontal-timeline .timeline #leftNav .prev,
+.horizontal-timeline .timeline #rightNav .next {
+    color: #4a7280 !important;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.horizontal-timeline .timeline #leftNav .prev:hover,
+.horizontal-timeline .timeline #rightNav .next:hover {
+    color: #eee !important;
+    text-shadow: none !important;
+}
+
+.horizontal-timeline .timeline #leftNav .prev.inactive,
+.horizontal-timeline .timeline #rightNav .next.inactive {
+    color: #eee !important;
+    text-shadow: none !important;
+    cursor: context-menu;
+}
+
+@media (max-width: 768px) {
+    .horizontal-timeline .events-content li {
+        width: 100% !important;
+    }
+
+    .horizontal-timeline .timeline #leftNav {
+        top: -28px !important;
+    }
+
+    .horizontal-timeline .timeline #rightNav {
+        top: 4px !important;
+    }
+}
+
+/*--------------------------------------------------------------
+# Login / Register
+--------------------------------------------------------------*/
+
+.login .alert {
+    position: absolute;
+    top: 10vh;
+    left: 36.5%;
+}
+
+.login .alert .btn-close {
+    top: -10%;
+    right: -10%;
+}
+
+@media (max-width: 768px) {
+    .login .alert {
+        position: relative;
+        top: 0;
+        left: 0%;
+    }
+
+    .login .alert .btn-close {
+        top: -25%;
+        right: 0%;
+    }
+}
+
+.form-login,
+.form-register {
+    width: 850px;
+    height: max-content;
+    background-color: #fff;
+    margin: 150px auto;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-login {
+    margin-top: 10%;
+}
+
+.form-register {
+    margin: 50px auto;
+    margin-top: 3%;
+}
+
+.form-login .img-fluid {
+    margin: 70px auto 0 auto;
+}
+
+.form-register .img-fluid {
+    margin: 0;
+}
+
+.input {
+    padding-right: 30px;
+}
+
+.form-label {
+    font-size: 16px;
+}
+
+.form-login .form-control,
+.form-login .form-select,
+.form-register .form-control,
+.form-register .form-select {
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.form-login h3,
+.form-register h3 {
+    /* text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1); */
+    font-weight: bold;
+    color: #333;
+}
+
+.form-login a,
+.form-register a {
+    font-size: 13px;
+    color: #888;
+    text-decoration: none;
+}
+
+.form-login p,
+.form-register p {
+    font-size: 15px;
+    color: #888;
+}
+
+.form-login p a,
+.form-register p a {
+    font-size: 15px;
+    color: #4cb8c4;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right,
+            #4cb8c4 0%,
+            #3cd3ad 51%,
+            #4cb8c4 100%);
+    width: 300px;
+    height: 50px;
+    margin: 0 auto 0 auto;
+    padding: 10px 30px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .form-login,
+    .form-register {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form-register {
+        margin-top: 50px;
+    }
+
+    .form-login .img-fluid {
+        margin: 0;
+    }
+
+    .input {
+        padding-right: 0;
+    }
+
+    .btn-grad {
+        width: 100%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Informasi
+--------------------------------------------------------------*/
+
+.content.informasi .card {
+    margin-bottom: 100px;
+}
+
+.informasi .card {
+    /* height: 100%; */
+    border: none;
+    border-radius: 14px;
+    -webkit-box-shadow: 0px 2px 8px rgba(1, 41, 112, 0.1);
+    box-shadow: 0px 2px 8px rgba(1, 41, 112, 0.1);
+}
+
+.informasi .card .card-img-top {
+    height: 300px;
+    border-radius: 14px 14px 0 0;
+}
+
+.informasi .owl-carousel .owl-stage-outer {
+    padding-bottom: 30px;
+}
+
+.informasi .owl-carousel .owl-stage-outer .card {
+    margin: 0 5px;
+}
+
+.informasi .card-informasi {
+    position: relative;
+}
+
+.informasi .btn-control-information {
+    display: flex;
+    position: absolute;
+    /* top: 27%; */
+    bottom: -12%;
+    cursor: pointer;
+    color: #4a7280;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(1, 41, 112, 0.1);
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.informasi .btn-control-information:hover {
+    background-color: #ddd;
+    box-shadow: 0 5px 5px rgba(1, 41, 112, 0.1);
+}
+
+.informasi .btn-control-information i {
+    font-size: 23px;
+}
+
+.informasi #prev-slide-information {
+    right: 21%;
+}
+
+.informasi #next-slide-information {
+    right: 17%;
+}
+
+@media (max-width: 1366px) {
+    .informasi .card .card-img-top {
+        height: 250px;
+    }
+
+    .informasi .btn-control-information {
+        bottom: -30%;
+    }
+
+    .informasi #prev-slide-information {
+        right: 16%;
+    }
+
+    .informasi #next-slide-information {
+        right: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    .informasi .btn-control-information {
+        bottom: -31%;
+    }
+
+    .informasi #prev-slide-information {
+        right: 30%;
+    }
+
+    .informasi #next-slide-information {
+        right: 7%;
+    }
+}
+
+@media (max-width: 450px) {
+    .informasi .btn-control-information {
+        bottom: -26%;
+    }
+
+    .informasi #prev-slide-information {
+        right: 26%;
+    }
+}
+
+@media (max-width: 430px) {
+    .informasi .card .card-img-top {
+        height: 320px;
+    }
+
+    .informasi .btn-control-information {
+        bottom: -20%;
+    }
+}
+
+@media (max-width: 400px) {
+    .informasi .btn-control-information {
+        bottom: -35%;
+    }
+}
+
+@media (max-width: 380px) {
+    .informasi .btn-control-information {
+        bottom: -38%;
+    }
+}
+
+@media (max-width: 340px) {
+    .informasi .btn-control-information {
+        bottom: -57%;
+    }
+}
+
+.content .information-img {
+    width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Tugas
+--------------------------------------------------------------*/
+
+.form-tugas .form-control,
+.form-tugas .form-select {
+    border-radius: 8px;
+}
+
+.form-tugas .card {
+    border-radius: 0 0 8px 8px;
+}
