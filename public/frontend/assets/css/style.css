@@ -23,12 +23,12 @@ body {
 }
 
 a {
-    color: #f0b245;
+    color: #fdd374;
     text-decoration: none;
 }
 
 a:hover {
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 h1,
@@ -70,7 +70,7 @@ button {
     padding: 0;
     font-size: 38px;
     line-height: 42px;
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .section-header span {
@@ -99,7 +99,7 @@ button {
     right: 15px;
     bottom: 15px;
     z-index: 1;
-    background: linear-gradient(to right, #cc0000, #ff6600);
+    background: linear-gradient(to right, #fdd374, #ebb759);
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -199,30 +199,30 @@ button {
 }
 
 .header.header-scrolled .navbar ul li a {
-    color: #4a7280;
+    color: #2a5a9d;
     text-shadow: none;
 }
 
 .header.header-scrolled .navbar ul li a:hover {
-    color: #ff6600;
+    color: #2a5a9d;
 }
 
 .header.header-scrolled .navbar .dropdown ul li a {
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .header.header-scrolled .navbar .dropdown ul li a:hover {
-    color: #ff6600;
+    color: #2a5a9d;
 }
 
 .header.header-scrolled .navbar a:hover,
 .header.header-scrolled .navbar .active,
 .header.header-scrolled .navbar li:hover>a {
-    color: #ff6600;
+    color: #2a5a9d;
 }
 
 .header.header-scrolled .logo span {
-    color: #4a7280;
+    color: #2a5a9d;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -285,7 +285,7 @@ button {
     padding: 10px 0 10px 30px;
     font-family: "Poppins", sans-serif;
     font-size: 15px !important;
-    color: #4a7280;
+    color: #2a5a9d;
     white-space: nowrap;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -301,7 +301,7 @@ button {
 .navbar a:hover,
 .navbar .active,
 .navbar li:hover>a {
-    color: #ff6600;
+    color: #2a5a9d;
     text-shadow: none;
 }
 
@@ -371,7 +371,7 @@ button {
     100% {
         width: 100%;
         height: 100%;
-        background: #ff6600;
+        background: #2a5a9d;
     }
 }
 
@@ -400,7 +400,7 @@ button {
 .navbar .dropdown ul a {
     padding: 10px 20px;
     font-size: 15px;
-    color: #4a7280;
+    color: #2a5a9d;
     text-shadow: none;
 }
 
@@ -411,7 +411,7 @@ button {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-    color: #ff6600;
+    color: #2a5a9d;
 }
 
 .navbar .dropdown:hover>ul {
@@ -534,14 +534,14 @@ button {
 .navbar-mobile a {
     padding: 10px 20px;
     font-size: 15px;
-    color: #4a7280;
+    color: #2a5a9d;
     text-shadow: none;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-    color: #ff6600;
+    color: #2a5a9d;
 }
 
 .navbar-mobile .dropdown ul {
@@ -573,7 +573,7 @@ button {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-    color: #f0b245;
+    color: #fdd374;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -588,7 +588,7 @@ button {
     height: 110vh;
     background: url(../img/header-utama-1366.jpg) top center no-repeat;
     background-size: cover;
-    color: #4a7280;
+    color: #2a5a9d;
     font-family: "Quicksand", sans-serif !important;
 }
 
@@ -597,7 +597,7 @@ button {
 }
 
 .hero .container .lead {
-    color: #4a7280;
+    color: #2a5a9d;
     font-size: 23px;
 }
 
@@ -621,12 +621,12 @@ button {
 }
 
 .hero .container .letsgo:hover {
-    background-color: #4a7280;
+    background-color: #2a5a9d;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
     -webkit-box-shadow: none;
     box-shadow: none;
-    /* border-color: #4a7280; */
+    /* border-color: #2a5a9d; */
 }
 
 /* RESPONSIVE Hero */
@@ -794,7 +794,7 @@ button {
     cursor: pointer;
     border-radius: 10px;
     font-weight: 700;
-    color: #4a7280;
+    color: #2a5a9d;
     font-size: 18px;
     font-weight: 600;
     margin: 0;
@@ -927,7 +927,7 @@ button {
 --------------------------------------------------------------*/
 
 #portfolio .portfolio-links a:hover {
-    background-color: #4a7280;
+    background-color: #2a5a9d;
 }
 
 .portfolio .container .lead {
@@ -961,8 +961,8 @@ button {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    color: #f0b245;
-    border-color: #f0b245;
+    color: #fdd374;
+    border-color: #fdd374;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1074,7 +1074,7 @@ button {
 
 .portfolio .portfolio-wrap .portfolio-links a {
     color: #fff;
-    background: #f0b245;
+    background: #fdd374;
     margin: 10px 2px;
     width: 36px;
     height: 36px;
@@ -1186,11 +1186,11 @@ button {
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #f0b245;
+    border: 1px solid #fdd374;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #f0b245;
+    background-color: #fdd374;
 }
 
 .portfolio-details .portfolio-info {
@@ -1252,15 +1252,15 @@ button {
 .contact .container i {
     font-size: 40px;
     line-height: 70px;
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .contact .container a {
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .contact .container .lead {
-    color: #4a7280 !important;
+    color: #2a5a9d !important;
     font-size: 16px;
     font-weight: 500;
 }
@@ -1305,7 +1305,7 @@ button {
 }
 
 .footer .copyright a:hover {
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .footer .copyright .social-links a {
@@ -1319,7 +1319,7 @@ button {
 }
 
 .footer .copyright .social-links a:hover {
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .footer .copyright .informasi a,
@@ -1437,7 +1437,7 @@ button {
     position: absolute;
     top: 27%;
     cursor: pointer;
-    color: #4a7280;
+    color: #2a5a9d;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -1842,7 +1842,7 @@ button {
 /* Logo */
 
 .logo h2 {
-    color: #4a7280;
+    color: #2a5a9d;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -1924,12 +1924,12 @@ button {
 
 .apr .card h4 {
     font-size: 22px;
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .apr .card h3 {
     font-size: 24px;
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .apr .card h5 {
@@ -1992,12 +1992,12 @@ button {
 .apr .pagination>li>span:focus,
 .apr .pagination>li>span:hover {
     box-shadow: none !important;
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .apr .pagination>li.active>a,
 .apr .pagination>li.active>span {
-    background-color: #4a7280 !important;
+    background-color: #2a5a9d !important;
     border: none;
     cursor: context-menu;
 }
@@ -2282,7 +2282,7 @@ button {
 /* MODIFIKASI BACA LEBIH LENGKAP*/
 
 .btn-modify {
-    background: linear-gradient(to right, #cc0000, #ff6600) !important;
+    background: linear-gradient(to right, #fdd374, #ebb759) !important;
     color: #ffffff !important;
 }
 
@@ -3055,7 +3055,7 @@ table {
     overflow: hidden;
     top: 0;
     right: 0;
-    background-color: #00838d;
+    background-color: #ebb759;
     border-radius: 0 4px 0 32px;
 }
 
@@ -3070,8 +3070,8 @@ table {
     display: block;
     position: relative;
     max-width: 100%;
-    background-color: #f2f8f9;
-    color: #4a7280;
+    background-color: #fbf4e8;
+    color: #ebb759;
     border-radius: 4px;
     padding: 25px 15px;
     margin: 12px;
@@ -3086,7 +3086,7 @@ table {
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: #00838d;
+    background: #fdd374;
     height: 32px;
     width: 32px;
     border-radius: 32px;
@@ -3114,22 +3114,22 @@ table {
     top: 0px;
     position: relative;
     max-width: 262px;
-    background-color: #f2f8f9;
-    color: #4a7280;
+    background-color: #fbf4e8;
+    color: #2a5a9d;
     border-radius: 4px;
     padding: 32px 24px;
     margin: 12px;
     text-decoration: none;
     z-index: 0;
     overflow: hidden;
-    border: 1px solid #f2f8f9;
+    border: 1px solid #fbf4e8;
 }
 
 .card2:hover {
     transition: all 0.2s ease-out;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
     top: -4px;
-    border: 1px solid #ccc;
+    border: 1px solid #ebb759;
     background-color: white;
 }
 
@@ -3158,14 +3158,14 @@ table {
     position: relative;
     max-width: 100%;
     text-align: center;
-    background-color: #f2f8f9;
-    color: #4a7280;
+    background-color: #fbf4e8;
+    color: #2a5a9d;
     border-radius: 4px;
     padding: 32px 24px;
     margin: 12px;
     text-decoration: none;
     overflow: hidden;
-    border: 1px solid #f2f8f9;
+    border: 1px solid #fbf4e8;
 }
 
 .card3 .go-corner {
@@ -3173,7 +3173,7 @@ table {
 }
 
 .card3:hover {
-    border: 1px solid #00838d;
+    border: 1px solid #ebb759;
     box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
     z-index: 500;
 }
@@ -4198,21 +4198,21 @@ h1 {
 }
 
 .fasilkom-cup .service_box {
-    background-color: #f2f8f9;
+    background-color: #fbf4e8;
     border-radius: 8px;
     padding: 0;
     height: 200px;
 }
 
 .fasilkom-cup .service_box.detail {
-    background-color: #f2f8f9;
+    background-color: #fbf4e8;
     border-radius: 8px;
     padding: 10px;
     height: 230px;
 }
 
 .fasilkom-cup .service_box>* {
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .service_box:hover,
@@ -4283,7 +4283,7 @@ h1 {
 }
 
 .fasilkom-cup .service_box.detail .service_icon i {
-    color: #4a7280;
+    color: #2a5a9d;
 }
 
 .service_box h3 {
