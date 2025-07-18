@@ -35,6 +35,7 @@
                       <th>Nama Program Kerja</th>
                       <th>Departemen</th>
                       <th>Penanggung Jawab</th>
+                      <th>LPJ</th>
                       <th>Status</th>
                       @can('Edit_Proker')
                         <th>Aksi</th>
@@ -48,6 +49,13 @@
                         <td>{{ $proker->nama_proker }}</td>
                         <td>{{ $proker->departemen->nama }}</td>
                         <td>{{ $proker->penanggung_jawab }}</td>
+                        <td>
+                          @if ($proker->path)
+                            <a href="{{ asset('storage/' . $proker->path) }}" class="embed-link" target="_blank">
+                              <img src="{{ asset('pkm/assets/img/icon-pdf.png') }}" alt="{{ $proker->nama_proker }}" class="img-fluid pdf">
+                            </a>
+                          @endif
+                        </td>
                         <td>{{ $proker->statusLabel() }}</td>
                         @can('Edit_Proker')
                           <td>

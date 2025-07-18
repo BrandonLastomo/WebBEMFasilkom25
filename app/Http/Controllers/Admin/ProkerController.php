@@ -85,6 +85,31 @@ class ProkerController extends Controller
 
         $params['slug'] = Str::slug($params['nama_proker']);
 
+        $request->validate(
+            [
+                'filelpj' => 'mimes:pdf,doc,docx|max:2048'
+            ],
+            [
+                'filelpj.mimes' => 'File harus berupa pdf.',
+                'filelpj.max' => 'Ukuran file maksimal 2MB.',
+            ]
+        );
+
+
+        if ($request->file()) {
+            $file = $request->file('filelpj');
+            $fileName = time() . '-' . $file->getClientOriginalName();
+
+            $folder = '/uploads/pdf';
+            $filePath = $file->storeAs($folder, $fileName, 'public');
+
+            $params = [
+                'nama_proker' => $params['nama_proker'],
+                'slug' => $params['slug'],
+                'path' => $filePath,
+            ];
+        }
+
         if (Proker::create($params)) {
             return redirect()->route('proker.index')->with('success', 'Program Kerja berhasil ditambahkan');
         }
@@ -134,6 +159,30 @@ class ProkerController extends Controller
         $proker = Proker::findOrFail($id);
 
         $params['slug'] = Str::slug($params['nama_proker']);
+
+        $request->validate(
+            [
+                'filelpj' => 'mimes:pdf,doc,docx|max:2048'
+            ],
+            [
+                'filelpj.mimes' => 'File harus berupa pdf.',
+                'filelpj.max' => 'Ukuran file maksimal 2MB.',
+            ]
+        );
+
+        if ($request->file()) {
+            $file = $request->file('filelpj');
+            $fileName = time() . '-' . $file->getClientOriginalName();
+
+            $folder = '/uploads/pdf';
+            $filePath = $file->storeAs($folder, $fileName, 'public');
+
+            $params = [
+                'nama_proker' => $params['nama_proker'],
+                'slug' => $params['slug'],
+                'path' => $filePath,
+            ];
+        }
 
         if ($proker->update($params)) {
             $proker->touch();

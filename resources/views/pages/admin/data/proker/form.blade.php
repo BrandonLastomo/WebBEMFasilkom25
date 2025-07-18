@@ -27,10 +27,10 @@
             </div>
             <div class="card-body">
               @if (!empty($proker))
-                {!! Form::model($proker, ['route' => ['proker.update', $proker->id], 'method' => 'PUT', 'class' => 'needs-validation', 'novalidate' => '']) !!}
+                {!! Form::model($proker, ['route' => ['proker.update', $proker->id], 'method' => 'PUT', 'enctype' => 'multipart/form-data', 'class' => 'needs-validation', 'novalidate' => '']) !!}
                 {!! Form::hidden('id') !!}
               @else
-                {!! Form::open(['route' => 'proker.store', 'class' => 'needs-validation', 'novalidate' => '']) !!}
+                {!! Form::open(['route' => 'proker.store', 'enctype' => 'multipart/form-data', 'class' => 'needs-validation', 'novalidate' => '']) !!}
               @endif
               @csrf
               <div class="row">
@@ -92,6 +92,18 @@
                     {!! Form::label('triwulan', 'Triwulan', ['class' => 'col-form-label text-md-right col-12 col-md-3 col-lg-3']) !!}
                     <div class="col-sm-12 col-md-7">
                       {!! Form::select('triwulan', $triwulan, null, ['class' => 'form-control selectric', 'placeholder' => 'Pilih Triwulan']) !!}
+                    </div>
+                  </div>
+
+                  <div class="form-group row mb-4">
+                    {!! Form::label('filelpj', 'File', ['class' => 'col-form-label text-md-right col-12 col-md-3 col-lg-3']) !!}
+                    <div class="col-sm-12 col-md-7">
+                      {!! Form::file('filelpj', ['class' => 'form-control border-0' . ($errors->has('filelpj') ? ' is-invalid' : null), 'style' => 'margin-left: -15px']) !!}
+                      @error('filelpj')
+                        <div class="invalid-feedback">
+                          {{ $errors->first('filelpj') }}
+                        </div>
+                      @enderror
                     </div>
                   </div>
 

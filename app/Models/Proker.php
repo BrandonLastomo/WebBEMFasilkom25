@@ -20,6 +20,7 @@ class Proker extends Model
         'anggaran',
         'status',
         'triwulan',
+        'path',
     ];
 
     public const BELUMTERLAKSANA = 0;
