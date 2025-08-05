@@ -9,10 +9,10 @@
         <div class="container">
             <div class="row typing float-lg-start text-lg-start text-center text-md-center">
                 <div class="col">
-                    <p data-aos="fade-up" data-aos-delay="200" class="fw-light">
-                        #Together <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    <p data-aos="fade-up" data-aos-delay="200" class="tagline fw-bold">
+                        #Together <span class="typed-text fw-bold"></span><span class="cursor fw-bold">&nbsp;</span>
                     </p>
-                    <small class="lead mt-5 fw-bold" data-aos="fade-up" data-aos-delay="500">
+                    <small class="lead mt-5" data-aos="fade-up" data-aos-delay="500">
                         Selamat Datang! <br />
                         Website Resmi <br />
                         BEM FASILKOM UNSIKA
