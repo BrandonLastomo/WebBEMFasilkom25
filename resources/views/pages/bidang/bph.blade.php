@@ -29,7 +29,7 @@ Badan Pengurus Harian | Kabinet {{env('KABINET');}}
       </div>
       <div class="row justify-content-center text-center m-5">
         <x-bph-card jabatan="Ketua Umum" :pengurus="$pengurus" />
-        <x-bph-card jabatan="Wakil Ketua Umum" :pengurus="$pengurus" />
+        <x-bph-card jabatan="Wakil Ketua" :pengurus="$pengurus" />
       </div>
 
       <hr>
@@ -41,7 +41,7 @@ Badan Pengurus Harian | Kabinet {{env('KABINET');}}
       </div>
       <div class="row justify-content-center text-center m-5">
         <x-bph-card jabatan="Sekretaris Umum" :pengurus="$pengurus" />
-        <x-bph-card jabatan="Wakil Sekretaris Umum" :pengurus="$pengurus" />
+        <x-bph-card jabatan="Wakil Sekretaris" :pengurus="$pengurus" />
       </div>
 
       <hr>
@@ -53,7 +53,7 @@ Badan Pengurus Harian | Kabinet {{env('KABINET');}}
       </div>
       <div class="row justify-content-center text-center m-5">
         <x-bph-card jabatan="Bendahara Umum" :pengurus="$pengurus" />
-        <x-bph-card jabatan="Wakil Bendahara Umum" :pengurus="$pengurus" />
+        <x-bph-card jabatan="Wakil Bendahara" :pengurus="$pengurus" />
       </div>
     </div>
   </section>
