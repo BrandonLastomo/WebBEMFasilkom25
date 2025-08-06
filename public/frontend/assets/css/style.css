@@ -582,31 +582,37 @@ button {
 --------------------------------------------------------------*/
 
 .hero {
-    height: 110vh;
-    background: url(../img/header-utama-1366.jpg) top center no-repeat;
-    background-size: cover;
+    height: 100vh;
+    /* background: url(../img/header-utama-1366.jpg) top center no-repeat;
+    background-size: cover; */
     color: #2a5a9d;
     font-family: "Urbanist", sans-serif;
 }
 
 .hero .container {
     margin-top: 130px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .tagline {
     font-family: "Inter", sans-serif !important;
+    font-size: 5rem;
     font-weight: 700;
-    letter-spacing: -2px !important;
+    letter-spacing: -6px !important;
 }
 
 .hero .container .lead {
-    color: #2a5a9d;
-    font-size: 23px;
+    color: #ebb759;
+    margin-top: -2rem;
+    font-size: 1rem;
 }
 
 .hero .container p {
     margin-top: 10px;
-    font-size: 32px;
+    /* font-size: 32px; */
     letter-spacing: 3px;
 }
 
@@ -636,32 +642,40 @@ button {
 
 @media (min-width: 1400px) {
     .hero {
-        background: url(../img/header-utama-1920.jpg) no-repeat;
-        background-position: -0 -50px;
+        /* background: url(../img/header-utama-1920.jpg) no-repeat;
+        background-position: -0 -50px; */
     }
 }
 
 @media (max-width: 1366px) {
     .hero {
-        background: url(../img/header-utama-1366.jpg) no-repeat;
+        /* background: url(../img/header-utama-1366.jpg) no-repeat;
         background-position: -280px -35px;
-        background-size: 135%;
+        background-size: 135%; */
     }
 }
 
 @media (max-width: 992px) {
     .hero {
         background: none;
+        text-align: left;
+    }
+
+    .hero .container {
+        margin-top: 40% !important;
+        justify-content: flex-start;
     }
 
     .hero .container p {
         margin: 0 auto 15px auto;
-        font-size: 20px;
+        text-align: left;
+        font-size: 8rem;
+        line-height: 1;
     }
 
     .hero .container .lead {
         margin: -15px auto 0 auto;
-        font-size: 18px;
+        /* font-size: 18px; */
     }
 
     .hero .container .letsgo {
@@ -672,22 +686,21 @@ button {
 @media (max-width: 768px) {
     .hero {
         /* text-align: center; */
-        height: 70vh;
         background: none;
     }
 
     .hero .container {
-        margin-top: 30% !important;
+        margin-top: 50% !important;
     }
 
     .hero .container p {
         margin: 20px auto;
-        font-size: 20px;
+        font-size: 5rem;
     }
 
     .hero .container .lead {
         margin: -15px auto 0 auto !important;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 
     .hero .container .letsgo {
@@ -698,7 +711,7 @@ button {
 @media (max-width: 410px) {
     .hero {
         text-align: center;
-        height: 110vh;
+        height: 100vh;
         /* background: url(../img/bg-header-mobile@2x.jpg) top center no-repeat;
         background-size: cover;
         background-position: 0 -200px; */
@@ -707,12 +720,12 @@ button {
 
     .hero .container p {
         margin: 20px auto;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 
     .hero .container .lead {
         margin: -15px auto 0 auto !important;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 
     .hero .container .letsgo {
@@ -732,12 +745,12 @@ button {
 
     .hero .container p {
         margin: 20px auto;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 
     .hero .container .lead {
         margin: -15px auto 0 auto;
-        font-size: 18px;
+        /* font-size: 18px; */
     }
 
     .hero .container .letsgo {
@@ -757,12 +770,12 @@ button {
 
     .hero .container p {
         margin: 20px auto;
-        font-size: 18px;
+        /* font-size: 18px; */
     }
 
     .hero .container .lead {
         margin: -15px auto 0 auto;
-        font-size: 18px;
+        /* font-size: 18px; */
     }
 
     .hero .container .letsgo {
@@ -2206,16 +2219,16 @@ button {
 /* Typing text */
 
 .typing p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     padding: 0.5rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
+    /* font-weight: 500;
+    letter-spacing: 0.1rem; */
     overflow: hidden;
 }
 
 .typing p span.typed-text {
-    font-weight: normal;
-    color: #ffa500;
+    /* font-weight: normal; */
+    color: #fdd374;
 }
 
 .typing p span.cursor {
@@ -2234,7 +2247,7 @@ button {
 
 @media (max-width: 576px) {
     .typing p {
-        letter-spacing: 0.07rem !important;
+        /* letter-spacing: 0.07rem !important; */
     }
 }
 
