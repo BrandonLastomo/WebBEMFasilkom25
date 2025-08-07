@@ -3,7 +3,7 @@
 
 	<div class="container">
 		<div class="copyright text-start">
-			<div class="row mt-5">
+			<div class="row">
 				<div class="col-md-5">
 					<h4 class="mb-3">BEM Fasilkom UNSIKA</h4>
 					<h5>Sekretariat</h5>
@@ -23,12 +23,12 @@
 						<a href="{{ route('lpj') }}">LPJ Online</a>
 					</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-3">
 					<h4 class="mb-3">Lainnya</h4>
 					<div class="other">
 						<a href="{{ route('kontak') }}">Kontak</a>
 						<a href="{{ route('visimisi') }}">Tentang Kami</a>
-						<a href="https://forms.gle/Q4Eme4W4As8H6KQn7">Kritik & Saran Depelopment Web</a>
+						<a href="https://forms.gle/Q4Eme4W4As8H6KQn7">Kritik & Saran Development Web</a>
 					</div>
 				</div>
 			</div>

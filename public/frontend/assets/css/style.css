@@ -37,7 +37,6 @@ h4,
 h5,
 h6 {
     font-family: "Inter", sans-serif;
-    letter-spacing: -2px;
 }
 
 h5 {
@@ -62,7 +61,7 @@ button {
 
 .section-header {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
 }
 
 .section-header p {
@@ -590,7 +589,7 @@ button {
 }
 
 .hero .container {
-    margin-top: 130px !important;
+    margin-top: 96px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1303,18 +1302,13 @@ button {
 
 .footer {
     margin-top: -1vh;
-    padding: 0 0 30px 0;
+    padding: 48px 32px;
     font-size: 16px;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIyNTYiIHZpZXdCb3g9IjAgMCAxNDQwIDI1NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgNjRMMTQ0MCAwVjI1NkgwVjY0WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzJfMykiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8yXzMiIHgxPSI3MjAiIHkxPSIwIiB4Mj0iNzIwIiB5Mj0iMjU2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNFMzA5MTMiLz4KPHN0b3Agb2Zmc2V0PSIwLjYwNDE2NyIgc3RvcC1jb2xvcj0iI0VBNEQwOCIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNFRjc5MDAiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K");
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-color: #2a5a9d;
 }
 
 .footer .copyright {
     text-align: center;
-    padding-top: 70vh;
-    padding-left: 60px;
     color: white;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -1327,7 +1321,7 @@ button {
 }
 
 .footer .copyright a:hover {
-    color: #2a5a9d;
+    color: #fdd374;
 }
 
 .footer .copyright .social-links a {
@@ -1341,7 +1335,7 @@ button {
 }
 
 .footer .copyright .social-links a:hover {
-    color: #2a5a9d;
+    color: #fdd374;
 }
 
 .footer .copyright .informasi a,
@@ -1796,10 +1790,23 @@ button {
     height: 1000px;
 }
 
-/* FIlosofi */
+/* Filosofi */
 
-.filosofi .section-header {
-    margin-top: 100px;
+.filosofi {
+    height: 75vh;
+    background-color: #2a5a9d;
+    position: relative;
+    overflow: hidden;
+    cursor: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.filosofi p {
+    color: #fff;
+    pointer-events: none;
 }
 
 .filosofi .container {
@@ -1809,12 +1816,30 @@ button {
 }
 
 .logo-home-span {
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .filosofi .container .deskripsi p {
-    margin-top: 100px;
-    font-size: 20px;
+    /* margin-top: 100px; */
+    font-size: 1rem;
+}
+
+.filosofi .container .deskripsi p strong {
+    color: #ebb759;
+}
+
+/* Cursor trail */
+.cursor-image {
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1),
+        opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    max-width: 128px !important;
+}
+
+.cursor-image .visible {
+    opacity: 1 !important;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 /* RESPONSIVE Filosofi */
@@ -1885,6 +1910,31 @@ button {
     .logo img {
         margin-left: 0;
     }
+}
+
+.linkFilosofiLogo {
+    background-color: #ebb759;
+    transition: 2s ease-in-out;
+}
+
+.linkFilosofiLogo:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(../img/logo-kabinet/filosofi-logo.png);
+    background-position: -96px;
+    background-size: cover;
+}
+
+.textLinkFilosofiLogo {
+    font-family: "Inter";
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #2a5a9d;
+    transition: 1s;
+}
+
+.textLinkFilosofiLogo:hover {
+    color: #ebb759;
 }
 
 /* APR */
