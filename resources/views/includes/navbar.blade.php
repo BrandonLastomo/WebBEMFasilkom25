@@ -4,7 +4,6 @@
         <div class="logo-container">
             <a href="{{ route('home') }}" class="logo d-flex align-items-center">
                 <img src="{{ url('frontend/assets/img/logo-kabinet/logo-navbar.png') }}" alt="" width="80px">
-                <!-- <span>BEM Fasilkom Unsika</span> -->
             </a>
         </div>
 

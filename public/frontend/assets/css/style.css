@@ -639,21 +639,6 @@ button {
 
 /* RESPONSIVE Hero */
 
-@media (min-width: 1400px) {
-    .hero {
-        /* background: url(../img/header-utama-1920.jpg) no-repeat;
-        background-position: -0 -50px; */
-    }
-}
-
-@media (max-width: 1366px) {
-    .hero {
-        /* background: url(../img/header-utama-1366.jpg) no-repeat;
-        background-position: -280px -35px;
-        background-size: 135%; */
-    }
-}
-
 @media (max-width: 992px) {
     .hero {
         background: none;
@@ -711,9 +696,6 @@ button {
     .hero {
         text-align: center;
         height: 100vh;
-        /* background: url(../img/bg-header-mobile@2x.jpg) top center no-repeat;
-        background-size: cover;
-        background-position: 0 -200px; */
         background: none;
     }
 
@@ -732,49 +714,23 @@ button {
     }
 }
 
-@media (max-width: 400px) {
-    .hero {
-        text-align: center;
-        height: max-content;
-        /* background: url(../img/bg-header-mobile@2x.jpg) top center no-repeat;
-        background-size: cover;
-        background-position: 0 -160px; */
-        background: none;
-    }
-
-    .hero .container p {
-        margin: 20px auto;
-        /* font-size: 20px; */
-    }
-
-    .hero .container .lead {
-        margin: -15px auto 0 auto;
-        /* font-size: 18px; */
-    }
-
-    .hero .container .letsgo {
-        margin: 20px auto;
-    }
-}
-
 @media (max-width: 360px) {
     .hero {
-        text-align: center;
-        height: max-content;
-        /* background: url(../img/bg-header-mobile@2x.jpg) top center no-repeat;
-        background-size: cover;
-        background-position: 0 -180px; */
-        background: none;
+        height: 75vh;
+        text-align: left;
+    }
+
+    .hero .container {
+        margin-top: 60% !important;
     }
 
     .hero .container p {
         margin: 20px auto;
-        /* font-size: 18px; */
+        font-size: 4rem;
     }
 
     .hero .container .lead {
         margin: -15px auto 0 auto;
-        /* font-size: 18px; */
     }
 
     .hero .container .letsgo {
@@ -785,6 +741,14 @@ button {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.features header {
+    text-align: left;
+}
+
+.features header p {
+    font-size: 6rem;
+    letter-spacing: -8px;
+}
 
 .features img {
     width: 300px !important;
@@ -838,6 +802,11 @@ button {
         left: -60px;
     }
 
+    .features header p {
+        font-size: 4rem;
+        letter-spacing: -8px;
+    }
+
     .features .img-shadow {
         margin-top: -20px;
         top: 218px;
@@ -865,6 +834,11 @@ button {
         position: relative;
         top: -60px;
         left: -30px;
+    }
+
+    .features header p {
+        font-size: 2rem;
+        letter-spacing: normal;
     }
 
     .features h6 {
@@ -955,7 +929,7 @@ button {
     list-style: none;
     text-align: center;
     background: white;
-    border-radius: 50px;
+    border-radius: 16px;
     padding: 2px 15px;
 }
 
@@ -970,7 +944,7 @@ button {
     margin: 0 4px 8px 4px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-radius: 50px;
+    border-radius: 16px;
     border: 1px solid #fff;
 }
 
@@ -1102,7 +1076,7 @@ button {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 16px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
@@ -1371,11 +1345,6 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        background: url(../img/bg-footer-mobile.png) top center no-repeat;
-        background-position-y: 300px;
-    }
-
     .footer .copyright {
         padding-left: 20px;
     }
@@ -1386,11 +1355,6 @@ button {
 }
 
 @media screen and (max-width: 400px) {
-    .footer {
-        background: url(../img/bg-footer-mobile.png) top center no-repeat;
-        background-position-y: 180px;
-    }
-
     .footer .copyright {
         padding-left: 20px;
     }
@@ -1405,11 +1369,6 @@ button {
 }
 
 @media screen and (max-width: 350px) {
-    .footer {
-        background: url(../img/bg-footer-mobile.png) top center no-repeat;
-        background-position-y: 120px;
-    }
-
     .footer .copyright {
         padding-left: 20px;
     }
@@ -1426,7 +1385,7 @@ button {
 /* seputar-fasilkom */
 
 .seputar-fasilkom {
-    height: 700px;
+    height: 150vh;
     margin-bottom: 50px;
 }
 
@@ -1436,6 +1395,18 @@ button {
 
 .seputar-fasilkom header {
     margin-bottom: -30px;
+}
+
+.seputar-fasilkom header p {
+    font-family: "Inter", sans-serif;
+}
+
+.headerBerita,
+.headerEvent {
+    background-color: #2a5a9d;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: -1px;
 }
 
 .seputar-fasilkom .owl-carousel .item .card {
@@ -1587,6 +1558,28 @@ button {
 }
 
 /* struktur */
+
+.strukturBem .row {
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: scroll;
+    cursor: grab;
+}
+.strukturBem .row:nth-child(odd) {
+    background-color: #2a5a9d;
+}
+
+.strukturBem .row:nth-child(even) {
+    background-color: #ebb759;
+}
+
+.strukturBem .row:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.125);
+}
 
 .struktur .container {
     height: 800px;
