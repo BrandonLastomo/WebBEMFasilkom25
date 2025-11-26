@@ -8,7 +8,7 @@
   <section id="lpj" class="lpj mt-5">
       
       <header class="section-header mt-5 fw-bold">
-        <p>LPJ Online BEM Fasilkom 2024</p>
+        <p>LPJ Online BEM Fasilkom 2025</p>
       </header>
       
       <div class="container mt-5">
